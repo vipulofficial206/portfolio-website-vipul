@@ -14,11 +14,16 @@ const app = express();
 app.use(
   cors({
     origin: "https://portfolio-website-vipul.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
+    allowedHeaders: [
+      "Content-Type",
+      "Authorization",
+      "x-admin-passkey",
+    ],
   })
 );
+
+app.options("*", cors());
 app.use(express.json());
 
 // Routes

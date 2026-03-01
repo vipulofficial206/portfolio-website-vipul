@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { Github, Mail, Phone, MapPin, ExternalLink, Code2, Cpu, Layout, Database, Trash2, Lock, FileText, Linkedin, ArrowUp, GraduationCap, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import Scene from './components/Scene';
+export const API_BASE = import.meta.env.VITE_API_BASE;
 
 const PROJECTS = [
   {
@@ -152,51 +153,26 @@ export default function App() {
 
   const verifyPasskey = async () => {
   try {
-    const res = await fetch('/api/admin/verify', {
+    const res = await fetch(`${API_BASE}/api/admin/verify`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ passkey }),
+      body: JSON.stringify({ passkey: passkey.trim() }),
     });
 
-    if (!res.ok) {
-      throw new Error("Invalid passkey");
-    }
+    if (!res.ok) throw new Error();
 
     setActivePasskey(passkey);
     setShowPasskeyPrompt(false);
     setPasskey('');
     await fetchMessages();
-  } catch (err) {
+  } catch {
     alert("Invalid admin passkey");
   }
 };
 
 const fetchMessages = async () => {
   try {
-    const res = await fetch('/api/messages', {
-      headers: {
-        'x-admin-passkey': activePasskey
-      }
-    });
-
-    if (!res.ok) {
-      throw new Error("Unauthorized");
-    }
-
-    const data = await res.json();
-    setMessages(data);
-    setShowAdmin(true);
-  } catch (err) {
-    alert("Admin authentication failed");
-  }
-};
-
-  const deleteMessage = async (id: string) => {
-  if (!confirm('Are you sure you want to delete this message?')) return;
-
-  try {
-    const res = await fetch(`/api/messages/${id}`, {
-      method: 'DELETE',
+    const res = await fetch(`${API_BASE}/api/messages`, {
       headers: {
         'x-admin-passkey': activePasskey
       }
@@ -204,37 +180,63 @@ const fetchMessages = async () => {
 
     if (!res.ok) throw new Error();
 
-    setMessages(prev => prev.filter(m => m._id !== id));
+    const data = await res.json();
+    setMessages(data);
+    setShowAdmin(true);
   } catch {
-    alert("Failed to delete message");
+    alert("Admin authentication failed");
   }
 };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setFormStatus('loading');
-    const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries());
+const deleteMessage = async (id: string) => {
+  if (!confirm('Are you sure you want to delete this message?')) return;
 
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-      const result = await res.json();
-      if (res.ok) {
-        setFormStatus('success');
-        setFormMessage(result.message);
-        (e.target as HTMLFormElement).reset();
-      } else {
-        throw new Error(result.error);
-      }
-    } catch (err) {
-      setFormStatus('error');
-      setFormMessage('Something went wrong. Please try again.');
+  try {
+    const res = await fetch(`${API_BASE}/api/messages/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'x-admin-passkey': activePasskey,
+      },
+    });
+
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.error || 'Delete failed');
     }
-  };
+
+    // remove from UI immediately
+    setMessages(prev => prev.filter(m => m._id !== id));
+  } catch (err: any) {
+    alert(err.message || 'Failed to delete message');
+  }
+};
+
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setFormStatus('loading');
+
+  const formData = new FormData(e.currentTarget);
+  const data = Object.fromEntries(formData.entries());
+
+  try {
+    const res = await fetch(`${API_BASE}/api/contact`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    const result = await res.json();
+
+    if (!res.ok) throw new Error();
+
+    setFormStatus('success');
+    setFormMessage(result.message);
+    e.currentTarget.reset();
+  } catch {
+    setFormStatus('error');
+    setFormMessage('Something went wrong. Please try again.');
+  }
+};
 
   return (
     <div className="relative min-h-screen font-sans">

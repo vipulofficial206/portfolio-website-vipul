@@ -125,7 +125,7 @@ const EDUCATION = [
 const GITHUB_STATS = [
   { label: "Repositories", value: "10+", icon: <Database className="w-4 h-4" /> },
   { label: "Contributions", value: "50+", icon: <Code2 className="w-4 h-4" /> },
-  { label: "Experience", value: "1+ Years", icon: <Cpu className="w-4 h-4" /> },
+  { label: "Practice Experience", value: "1+ Years", icon: <Cpu className="w-4 h-4" /> },
 ];
 
 export default function App() {

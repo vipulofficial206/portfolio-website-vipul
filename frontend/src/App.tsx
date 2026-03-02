@@ -534,7 +534,7 @@ const fetchMessages = async () => {
                       <MapPin className="w-5 h-5" />
                     </div>
                     <span>Amaravati, India</span>
-                  </div>
+                  </div>wh
                 </div>
               </div>
 
@@ -573,6 +573,7 @@ const fetchMessages = async () => {
                   </p>
                 )}
               </form>
+              <span>Note: The message will be sent after a 50-second delay due to the backend being deployed on a free instance.</span>
             </div>
           </div>
         </section>

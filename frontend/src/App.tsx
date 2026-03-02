@@ -534,7 +534,7 @@ const fetchMessages = async () => {
                       <MapPin className="w-5 h-5" />
                     </div>
                     <span>Amaravati, India</span>
-                  </div>wh
+                  </div>
                 </div>
               </div>
 

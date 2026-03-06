@@ -329,7 +329,7 @@ const fetchMessages = async () => {
                 View Projects
               </a>
               <a 
-                href="https://drive.google.com/file/d/1KdTrIzS759HHC6n7TE1ZYUz0kjvg0TU0/view?usp=drive_link" 
+                href="https://drive.google.com/file/d/1KdTrIzS759HHC6n7TE1ZYUz0kjvg0TU0/view?usp=sharing" 
                 target="_blank"
                 className="px-8 py-4 glass hover:bg-white/10 text-white font-bold rounded-full transition-all flex items-center gap-2"
               >

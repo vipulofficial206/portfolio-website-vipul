@@ -6,54 +6,90 @@ const value = import.meta.env.VITE_API_BASE;
 
 const PROJECTS = [
   {
-    title: "Form Canvas",
-    subtitle: "MERN Stack Form Builder",
-    description: "A full-stack form builder with drag-and-drop creation, real-time preview, and response analytics. Built with MongoDB, Express, React, and Node.js.",
-    tags: ["MERN", "Tailwind CSS", "Recharts", "JWT"],
-    link: "https://github.com/vipulofficial206/Form_canvas",
-    icon: <Layout className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
+    title: "Plant Analysis",
+    subtitle: "AI-Based Soil Intelligence",
+    description: "Krishi Saathi AI is a comprehensive, AI-Based Soil Intelligence System designed to help farmers make data-driven decisions. By analyzing real-world soil test reports, local agro-climatic conditions...",
+    tags: ["AI", "Machine Learning", "Data Analysis"],
+    link: "https://github.com/vipulofficial206/plant_analysis",
+    icon: <Database className="w-6 h-6" />,
+    image: "https://images.unsplash.com/photo-1592982537447-6f23075c3285?auto=format&fit=crop&q=80&w=800"
   },
   {
-    title: "Ohm’s Law Circuit Board",
+    title: "Virtual Classroom",
+    subtitle: "Real-time Interaction Platform",
+    description: "A comprehensive, real-time Virtual Classroom solution designed for seamless teacher-student interaction. This platform features live classes with WebRTC video, real-time attendance via QR codes...",
+    tags: ["WebRTC", "React", "Node.js", "Socket.io"],
+    link: "https://github.com/vipulofficial206/virtual_classroom",
+    icon: <Layout className="w-6 h-6" />,
+    image: "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    title: "Portfolio Website",
+    subtitle: "Modern Developer Portfolio",
+    description: "A modern, responsive developer portfolio website built with React, showcasing my skills, projects, and contact info. It includes smooth animations and interactive UI to provide a great visitor experience.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    link: "https://github.com/vipulofficial206/portfolio-website-vipul",
+    icon: <Code2 className="w-6 h-6" />,
+    image: "https://images.unsplash.com/photo-1507238692062-5a0423982297?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    title: "Plant Doctor",
+    subtitle: "AI Disease Detection",
+    description: "Plant Doctor is an AI-based plant disease detection and advisory system that identifies plant health issues from images using a Convolutional Neural Network (CNN).",
+    tags: ["Python", "TensorFlow", "React", "FastAPI"],
+    link: "https://github.com/vipulofficial206/plant-doctor",
+    icon: <Cpu className="w-6 h-6" />,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyRCMF-TtNaYB_-6g_xoWQ3fQC4JBqKD6ygQ&s?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    title: "Plant Doctor Frontend",
+    subtitle: "React UI for Plant Doctor",
+    description: "Plant Doctor Frontend is a React-based user interface for the AI Plant Doctor system. It allows users to upload plant leaf images, interact with the disease detection model, and receive diagnosis...",
+    tags: ["React", "UI/UX", "API Integration"],
+    link: "https://github.com/vipulofficial206/plant-doctor-frontend",
+    icon: <Layout className="w-6 h-6" />,
+    image: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    title: "Ohm’s Law Circuit Builder",
     subtitle: "3D Interactive Web Platform",
-    description: "Interactive 3D circuit simulation platform for real-time calculation of voltage, current, and resistance. Built with React, TypeScript, and Three.js.",
+    description: "Ohm’s Law Circuit Builder is an interactive web application that allows users to construct simple electrical circuits and understand the relationship between voltage, current, and resistance.",
     tags: ["React", "Three.js", "TypeScript", "WebGL"],
     link: "https://github.com/vipulofficial206/Ohm-s-Law-Circuit-Builder",
     icon: <Cpu className="w-6 h-6" />,
     image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&q=80&w=800"
   },
   {
-    title: "Flipkart Clone",
-    subtitle: "MERN Stack E-commerce",
-    description: "A full-featured e-commerce platform clone with product listings, cart management, and user authentication using the MERN stack.",
-    tags: ["MongoDB", "Express", "React", "Node.js"],
-    link: "https://github.com/vipulofficial206/Flipkart_clone_mern_stack",
-    icon: <Database className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    title: "Plant Doctor",
-    subtitle: "AI Disease Detection",
-    description: "An AI-powered application that detects plant diseases from images, providing diagnosis and treatment recommendations.",
-    tags: ["Python", "TensorFlow", "React", "FastAPI"],
-    link: "https://github.com/vipulofficial206/plant-doctor",
-    icon: <Code2 className="w-6 h-6" />,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyRCMF-TtNaYB_-6g_xoWQ3fQC4JBqKD6ygQ&s?auto=format&fit=crop&q=80&w=800"
-  },
-  {
     title: "Food Nutritionist",
     subtitle: "AI Nutrition Analyzer",
-    description: "Analyze food items from images to get nutritional information and health insights using Gemini AI and computer vision.",
+    description: "Food Nutritionist is a deep learning–based food recognition and nutrition analysis system that identifies food items from images using a Convolutional Neural Network (CNN).",
     tags: ["Gemini AI", "React", "Node.js", "Vision"],
     link: "https://github.com/vipulofficial206/food_nutritionist",
-    icon: <Layout className="w-6 h-6" />,
+    icon: <Database className="w-6 h-6" />,
     image: "https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    title: "Form Canvas",
+    subtitle: "MERN Stack Form Builder",
+    description: "Form Canvas is a full-stack web application that replicates and extends the core features of Google Forms. It allows users to create, share, and analyze forms seamlessly.",
+    tags: ["MERN", "Tailwind CSS", "Recharts", "JWT"],
+    link: "https://github.com/vipulofficial206/Form_canvas",
+    icon: <Layout className="w-6 h-6" />,
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    title: "EAT-IT Frontend",
+    subtitle: "Food Delivery App",
+    description: "Food Delivery App built using React provides users with a seamless interface to browse through restaurants, view menus, add items to the cart, and place orders.",
+    tags: ["React.js", "JavaScript", "Tailwind CSS"],
+    link: "https://github.com/vipulofficial206/EAT-IT-Frontend",
+    icon: <Layout className="w-6 h-6" />,
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "GitHub Profile Analyzer",
     subtitle: "Stats Visualization",
-    description: "A tool to visualize GitHub profile statistics, repository contributions, and language usage with interactive charts.",
+    description: "A responsive React + TypeScript web app that analyzes any GitHub profile. View user stats, explore repositories, and visualize daily commits — beautifully styled with ShadCN UI.",
     tags: ["GitHub API", "React", "Recharts", "Tailwind"],
     link: "https://github.com/vipulofficial206/GitHubProfileAnalyzer",
     icon: <Github className="w-6 h-6" />,
@@ -62,20 +98,11 @@ const PROJECTS = [
   {
     title: "QR Generator",
     subtitle: "Utility Tool",
-    description: "Generate custom QR codes for URLs, text, and contact information with real-time preview and download options.",
+    description: "A QR generator website which works on both laptop and mobile and easy to use with some cool animations and working module a download option to download the QR within seconds.",
     tags: ["React", "QR Code API", "JavaScript"],
     link: "https://github.com/vipulofficial206/QRGenerator",
     icon: <Code2 className="w-6 h-6" />,
     image: "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    title: "EAT-IT",
-    subtitle: "Food Ordering App",
-    description: "Responsive food-ordering frontend with reusable UI components, cart functionality, and optimized performance.",
-    tags: ["React.js", "JavaScript", "Tailwind CSS"],
-    link: "https://github.com/vipulofficial206/EAT-IT-Frontend",
-    icon: <Layout className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
   }
 ];
 

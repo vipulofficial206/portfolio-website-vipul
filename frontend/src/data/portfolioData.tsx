@@ -8,7 +8,7 @@ export const PROJECTS = [
     tags: ["AI", "Machine Learning", "Data Analysis"],
     link: "https://github.com/vipulofficial206/plant_analysis",
     icon: <Database className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1592982537447-6f23075c3285?auto=format&fit=crop&q=80&w=800"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Agriculture_in_India.jpg/800px-Agriculture_in_India.jpg"
   },
   {
     title: "Virtual Classroom",
@@ -62,7 +62,7 @@ export const PROJECTS = [
     tags: ["Gemini AI", "React", "Node.js", "Vision"],
     link: "https://github.com/vipulofficial206/food_nutritionist",
     icon: <Database className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&q=80&w=800"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Foods_%28cropped%29.jpg/800px-Foods_%28cropped%29.jpg"
   },
   {
     title: "Form Canvas",

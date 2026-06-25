@@ -141,7 +141,7 @@ export const CERTIFICATIONS = [
 ];
 
 export const EDUCATION = [
-  { degree: "B.Tech in Computer Science & Engineering", school: "VIT-AP University", period: "2023 – 2027", grade: "8.31 CGPA" },
+  { degree: "B.Tech in Computer Science & Engineering", school: "VIT-AP University", period: "2023 – 2027", grade: "8.35 CGPA" },
   { degree: "Senior Secondary (XII), Science", school: "MPC", period: "2021 – 2023", grade: "93%" }
 ];
 

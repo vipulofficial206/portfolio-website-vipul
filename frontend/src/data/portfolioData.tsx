@@ -8,7 +8,7 @@ export const PROJECTS = [
     tags: ["AI", "Machine Learning", "Data Analysis"],
     link: "https://github.com/vipulofficial206/plant_analysis",
     icon: <Database className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1592982537447-6f23075c3285?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1530836369250-ef71a3f5e902?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "Virtual Classroom",
@@ -17,7 +17,7 @@ export const PROJECTS = [
     tags: ["WebRTC", "React", "Node.js", "Socket.io"],
     link: "https://github.com/vipulofficial206/virtual_classroom",
     icon: <Layout className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "Portfolio Website",
@@ -26,7 +26,7 @@ export const PROJECTS = [
     tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     link: "https://github.com/vipulofficial206/portfolio-website-vipul",
     icon: <Code2 className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1507238692062-5a0423982297?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "Plant Doctor",
@@ -35,7 +35,7 @@ export const PROJECTS = [
     tags: ["Python", "TensorFlow", "React", "FastAPI"],
     link: "https://github.com/vipulofficial206/plant-doctor",
     icon: <Cpu className="w-6 h-6" />,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyRCMF-TtNaYB_-6g_xoWQ3fQC4JBqKD6ygQ&s?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1533460004989-cef01064af7e?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "Plant Doctor Frontend",
@@ -44,7 +44,7 @@ export const PROJECTS = [
     tags: ["React", "UI/UX", "API Integration"],
     link: "https://github.com/vipulofficial206/plant-doctor-frontend",
     icon: <Layout className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "Ohm’s Law Circuit Builder",
@@ -53,7 +53,7 @@ export const PROJECTS = [
     tags: ["React", "Three.js", "TypeScript", "WebGL"],
     link: "https://github.com/vipulofficial206/Ohm-s-Law-Circuit-Builder",
     icon: <Cpu className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "Food Nutritionist",
@@ -62,7 +62,7 @@ export const PROJECTS = [
     tags: ["Gemini AI", "React", "Node.js", "Vision"],
     link: "https://github.com/vipulofficial206/food_nutritionist",
     icon: <Database className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1490645935967-10de6ba8286d?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "Form Canvas",
@@ -71,7 +71,7 @@ export const PROJECTS = [
     tags: ["MERN", "Tailwind CSS", "Recharts", "JWT"],
     link: "https://github.com/vipulofficial206/Form_canvas",
     icon: <Layout className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "EAT-IT Frontend",
@@ -80,7 +80,7 @@ export const PROJECTS = [
     tags: ["React.js", "JavaScript", "Tailwind CSS"],
     link: "https://github.com/vipulofficial206/EAT-IT-Frontend",
     icon: <Layout className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "GitHub Profile Analyzer",
@@ -89,7 +89,7 @@ export const PROJECTS = [
     tags: ["GitHub API", "React", "Recharts", "Tailwind"],
     link: "https://github.com/vipulofficial206/GitHubProfileAnalyzer",
     icon: <Github className="w-6 h-6" />,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5di8TBwj5Co4SpG19e0qcYIArAOh4py-Pmg&s?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "QR Generator",
@@ -98,7 +98,7 @@ export const PROJECTS = [
     tags: ["React", "QR Code API", "JavaScript"],
     link: "https://github.com/vipulofficial206/QRGenerator",
     icon: <Code2 className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=800"
   }
 ];
 

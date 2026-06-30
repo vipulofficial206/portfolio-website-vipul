@@ -15,7 +15,7 @@ export default function Skills() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-fuchsia-500/50 to-transparent"></div>
       
       <div className="flex flex-col items-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-3 font-gaming uppercase hover-glitch text-white">Skills</h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 font-gaming uppercase hover-glitch text-white text-center">Skills</h2>
         <p className="text-fuchsia-400 font-mono text-sm uppercase tracking-widest">Technical Expertise</p>
       </div>
 

@@ -38,7 +38,7 @@ export default function Contact() {
 
       <div className="max-w-3xl mx-auto">
         <div className="flex flex-col items-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-3 font-gaming uppercase hover-glitch text-white">Contact Me</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 font-gaming uppercase hover-glitch text-white text-center">Contact Me</h2>
           <p className="text-cyan-400 font-mono text-sm uppercase tracking-widest">Get In Touch</p>
         </div>
 

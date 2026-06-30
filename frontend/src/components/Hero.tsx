@@ -16,35 +16,35 @@ export default function Hero() {
           <span className="text-[10px] font-mono text-fuchsia-400 uppercase tracking-[0.2em] animate-pulse">System Online // Portfolio Active</span>
         </div>
         
-        <h2 className="font-mono text-cyan-400 text-sm mb-4 tracking-widest uppercase border-l-2 border-cyan-500 pl-3">
+        <h2 className="font-mono text-cyan-400 text-xs sm:text-sm mb-4 tracking-widest uppercase border-l-2 border-cyan-500 pl-3">
           Web Developer & DL Specialist
         </h2>
         
-        <h1 className="text-5xl sm:text-7xl md:text-8xl font-gaming font-bold tracking-tighter mb-6 leading-[1.1] uppercase">
-          <span className="block hover-glitch transition-transform">THAMMINANA</span>
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-gaming font-bold tracking-tighter mb-6 leading-[1.1] uppercase">
+          <span className="block hover-glitch transition-transform break-all sm:break-normal">THAMMINANA</span>
           <span className="text-gradient">VIPUL</span>
         </h1>
         
-        <p className="max-w-2xl text-lg text-white/70 mb-8 leading-relaxed font-mono">
+        <p className="max-w-2xl text-xs sm:text-sm md:text-lg text-white/70 mb-8 leading-relaxed font-mono">
           <span className="text-cyan-500">{'>'}</span> Initializing developer profile... <br/>
           <span className="text-cyan-500">{'>'}</span> Loading skills: React, TypeScript, MERN, WebGL... <br/>
           <span className="text-cyan-500">{'>'}</span> Status: Ready to build scalable and interactive web applications.
         </p>
         
-        <div className="flex flex-wrap gap-4 mb-12">
-          <a href="#contact" className="px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-black font-gaming uppercase font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(6,182,212,0.4)] clip-path-slant">
+        <div className="flex flex-wrap gap-3 sm:gap-4 mb-12">
+          <a href="#contact" className="px-4 py-3 sm:px-8 sm:py-4 text-xs sm:text-base bg-cyan-500 hover:bg-cyan-400 text-black font-gaming uppercase font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(6,182,212,0.4)] clip-path-slant">
             Contact Me
           </a>
-          <a href="#projects" className="px-8 py-4 glass-panel hover:bg-white/5 text-white font-gaming uppercase font-bold transition-all transform hover:-translate-y-1 border border-cyan-500/50">
+          <a href="#projects" className="px-4 py-3 sm:px-8 sm:py-4 text-xs sm:text-base glass-panel hover:bg-white/5 text-white font-gaming uppercase font-bold transition-all transform hover:-translate-y-1 border border-cyan-500/50">
             View Projects
           </a>
           <a 
             href="https://drive.google.com/file/d/1KdTrIzS759HHC6n7TE1ZYUz0kjvg0TU0/view?usp=drive_link" 
             target="_blank"
             rel="noreferrer"
-            className="px-8 py-4 glass-panel hover:bg-white/5 text-cyan-400 font-mono font-bold transition-all flex items-center gap-2 transform hover:-translate-y-1 border-b-2 border-fuchsia-500"
+            className="px-4 py-3 sm:px-8 sm:py-4 text-xs sm:text-base glass-panel hover:bg-white/5 text-cyan-400 font-mono font-bold transition-all flex items-center gap-2 transform hover:-translate-y-1 border-b-2 border-fuchsia-500"
           >
-            <Terminal className="w-5 h-5" /> Resume.pdf
+            <Terminal className="w-4 h-4 sm:w-5 sm:h-5" /> Resume.pdf
           </a>
         </div>
 

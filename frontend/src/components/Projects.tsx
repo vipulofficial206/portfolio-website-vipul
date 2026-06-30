@@ -8,7 +8,7 @@ export default function Projects() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent"></div>
       
       <div className="flex flex-col items-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-3 font-gaming uppercase hover-glitch text-white">Projects</h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 font-gaming uppercase hover-glitch text-white text-center">Projects</h2>
         <p className="text-cyan-400 font-mono text-sm uppercase tracking-widest">My Recent Work</p>
       </div>
 

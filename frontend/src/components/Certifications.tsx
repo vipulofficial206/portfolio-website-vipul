@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Award } from 'lucide-react';
+import { Award, ExternalLink } from 'lucide-react';
 import { CERTIFICATIONS, EDUCATION } from '../data/portfolioData';
 
 export default function Certifications() {
@@ -25,10 +25,23 @@ export default function Certifications() {
           </div>
           <div className="space-y-4">
             {CERTIFICATIONS.map((cert, index) => (
-              <div key={index} className="glass-panel p-6 rounded-xl border border-cyan-500/20 hover:border-cyan-400 transition-colors group">
-                <h4 className="font-bold text-lg mb-1 group-hover:text-cyan-400 transition-colors font-mono">{cert.title}</h4>
-                <p className="text-white/50 text-sm font-mono uppercase">{cert.issuer}</p>
-              </div>
+              <a 
+                key={index} 
+                href={cert.link}
+                target="_blank"
+                rel="noreferrer"
+                className="block glass-panel p-6 rounded-xl border border-cyan-500/20 hover:border-cyan-400 transition-all hover:-translate-y-1 group"
+              >
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h4 className="font-bold text-lg mb-1 group-hover:text-cyan-400 transition-colors font-mono">{cert.title}</h4>
+                    <p className="text-white/50 text-sm font-mono uppercase">{cert.issuer}</p>
+                  </div>
+                  <div className="text-cyan-500/50 group-hover:text-cyan-400 transition-colors">
+                    <ExternalLink className="w-5 h-5" />
+                  </div>
+                </div>
+              </a>
             ))}
           </div>
         </motion.div>

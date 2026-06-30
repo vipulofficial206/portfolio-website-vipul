@@ -58,7 +58,7 @@ export default function TicTacToeGame() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto glass-panel p-8 rounded-3xl relative group">
+    <div className="max-w-2xl mx-auto glass-panel p-4 sm:p-8 rounded-3xl relative group">
       <div className="absolute inset-0 bg-yellow-900/10 rounded-3xl pointer-events-none group-hover:bg-yellow-900/20 transition-colors" />
       
       <div className="flex justify-between items-center mb-6 font-mono">

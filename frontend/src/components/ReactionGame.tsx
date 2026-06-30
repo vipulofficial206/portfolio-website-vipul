@@ -6,7 +6,7 @@ export default function ReactionGame() {
   const [reactionTime, setReactionTime] = useState<number | null>(null);
   const [message, setMessage] = useState('Click to Start');
   const startTimeRef = useRef<number>(0);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const handleClick = () => {
     if (gameState === 'idle' || gameState === 'finished') {

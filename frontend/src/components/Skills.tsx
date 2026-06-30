@@ -1,62 +1,57 @@
-import { GraduationCap } from 'lucide-react';
-import { SKILLS, EDUCATION } from '../data/portfolioData';
+import { motion } from 'motion/react';
+import { SKILLS } from '../data/portfolioData';
+import { Code2, Cpu, Database, Brain } from 'lucide-react';
+
+const icons = {
+  "Frontend": <Code2 className="w-5 h-5" />,
+  "Backend": <Database className="w-5 h-5" />,
+  "ML & Data Science": <Brain className="w-5 h-5" />,
+  "Tools & Databases": <Cpu className="w-5 h-5" />
+};
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 md:py-32 border-t border-white/5 relative">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent"></div>
+    <section id="skills" className="py-24 md:py-32 border-t border-fuchsia-900/30 relative">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-fuchsia-500/50 to-transparent"></div>
       
-      <div className="flex flex-col md:flex-row gap-16 lg:gap-24">
-        <div className="flex-1">
-          <div className="mb-8">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-3">Technical <br /> Proficiency</h2>
-            <p className="text-emerald-400 font-mono text-sm uppercase tracking-widest flex items-center gap-2">
-              <span className="w-8 h-[1px] bg-emerald-400"></span> 02 / Expertise
-            </p>
-          </div>
-          <p className="text-white/60 leading-relaxed mb-12 font-light text-lg">
-            I focus on creating seamless digital experiences using modern technologies. 
-            My expertise spans across the full development lifecycle, from designing intuitive UI/UX with Tailwind CSS to building robust backend architectures with Node.js and Express. 
-            I am particularly passionate about integrating Machine Learning and Deep Learning models into web applications, utilizing Gemini APIs for advanced AI features and FastAPI for high-performance backend services.
-          </p>
-          
-          <div className="space-y-8 glass p-8 rounded-3xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 blur-[40px] -z-10 rounded-full" />
-            <div>
-              <h4 className="font-mono text-sm text-emerald-400 uppercase tracking-widest mb-6 flex items-center gap-3">
-                <span className="p-2 bg-emerald-500/10 rounded-lg"><GraduationCap className="w-5 h-5" /></span> Education
-              </h4>
-              <div className="space-y-6">
-                {EDUCATION.map((edu) => (
-                  <div key={edu.degree} className="border-l-2 border-emerald-500/20 pl-6 py-1 relative group">
-                    <div className="absolute -left-[5px] top-2 w-2 h-2 rounded-full bg-emerald-500/50 group-hover:bg-emerald-400 transition-colors shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
-                    <h5 className="font-bold text-lg mb-1">{edu.degree}</h5>
-                    <p className="text-sm text-white/50 mb-2">{edu.school} &bull; <span className="text-white/30">{edu.period}</span></p>
-                    <span className="inline-block px-3 py-1 bg-white/5 rounded-full text-[10px] font-mono text-emerald-400 uppercase tracking-widest">{edu.grade}</span>
-                  </div>
-                ))}
+      <div className="flex flex-col items-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-3 font-gaming uppercase hover-glitch text-white">Skill Tree</h2>
+        <p className="text-fuchsia-400 font-mono text-sm uppercase tracking-widest">Unlocked Abilities</p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        {SKILLS.map((skillGroup, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1 }}
+            className="glass-panel p-8 rounded-xl border border-fuchsia-500/20 hover:border-fuchsia-400 transition-colors group relative overflow-hidden"
+          >
+            <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:opacity-20 transition-opacity">
+              {icons[skillGroup.category as keyof typeof icons]}
+            </div>
+            
+            <div className="flex items-center gap-3 mb-6">
+              <div className="text-fuchsia-400">
+                {icons[skillGroup.category as keyof typeof icons]}
               </div>
+              <h3 className="text-xl font-bold font-gaming uppercase tracking-wider text-white">{skillGroup.category}</h3>
             </div>
-          </div>
-        </div>
-        
-        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12 content-start">
-          {SKILLS.map((skillGroup) => (
-            <div key={skillGroup.category} className="group">
-              <h4 className="font-mono text-xs text-emerald-400 uppercase tracking-widest mb-6 pb-2 border-b border-white/10 group-hover:border-emerald-500/30 transition-colors">
-                {skillGroup.category}
-              </h4>
-              <ul className="space-y-3">
-                {skillGroup.items.map((skill) => (
-                  <li key={skill} className="text-white/70 flex items-center gap-3 font-light hover:text-white transition-colors hover:translate-x-1 transform duration-300">
-                    <div className="w-1.5 h-1.5 bg-white/20 group-hover:bg-emerald-500/50 rounded-full transition-colors" />
-                    {skill}
-                  </li>
-                ))}
-              </ul>
+            
+            <div className="flex flex-wrap gap-2">
+              {skillGroup.items.map((skill, i) => (
+                <span 
+                  key={i} 
+                  className="px-3 py-1.5 bg-[#050505] text-white/80 border border-fuchsia-900/50 rounded-sm text-sm font-mono hover:text-fuchsia-300 hover:border-fuchsia-500 transition-colors shadow-[0_0_10px_rgba(217,70,239,0)] hover:shadow-[0_0_10px_rgba(217,70,239,0.3)]"
+                >
+                  {skill}
+                </span>
+              ))}
             </div>
-          ))}
-        </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

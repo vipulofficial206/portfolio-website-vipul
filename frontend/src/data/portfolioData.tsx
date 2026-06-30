@@ -150,3 +150,10 @@ export const GITHUB_STATS = [
   { label: "Hackathons", value: "20+", icon: <Code2 className="w-4 h-4" /> },
   { label: "Practical Experience", value: "1+ Years", icon: <Cpu className="w-4 h-4" /> },
 ];
+
+export const SOCIAL_LINKS = [
+  { id: 'github', label: 'GitHub', url: 'https://github.com/vipulofficial206' },
+  { id: 'linkedin', label: 'LinkedIn', url: 'https://www.linkedin.com/in/vipul-thamminana' },
+  { id: 'twitter', label: 'Twitter', url: 'https://x.com/VThamminana' },
+  { id: 'email', label: 'Email', url: 'mailto:thamminanavipul@gmail.com' }
+];

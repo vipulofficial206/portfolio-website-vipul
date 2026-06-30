@@ -15,8 +15,8 @@ export default function Skills() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-fuchsia-500/50 to-transparent"></div>
       
       <div className="flex flex-col items-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-3 font-gaming uppercase hover-glitch text-white">Skill Tree</h2>
-        <p className="text-fuchsia-400 font-mono text-sm uppercase tracking-widest">Unlocked Abilities</p>
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-3 font-gaming uppercase hover-glitch text-white">Skills</h2>
+        <p className="text-fuchsia-400 font-mono text-sm uppercase tracking-widest">Technical Expertise</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">

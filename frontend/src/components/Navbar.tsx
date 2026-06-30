@@ -14,14 +14,14 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
         <a href="#" className="text-xl font-gaming font-bold tracking-tighter text-white hover:text-cyan-400 transition-colors uppercase flex items-center gap-2 group">
           <div className="w-3 h-3 bg-cyan-500 rounded-sm group-hover:animate-pulse"></div>
-          Vipul<span className="text-cyan-500">_OS</span>
+          Vipul
         </a>
         
         <div className="hidden md:flex items-center gap-8 font-mono text-sm uppercase tracking-widest">
-          <a href="#projects" className="text-white/70 hover:text-cyan-400 transition-colors">Inventory</a>
+          <a href="#projects" className="text-white/70 hover:text-cyan-400 transition-colors">Projects</a>
           <a href="#skills" className="text-white/70 hover:text-cyan-400 transition-colors">Skills</a>
           <a href="#arcade" className="text-cyan-400 hover:text-fuchsia-400 transition-colors hover-glitch">Arcade</a>
-          <a href="#contact" className="px-4 py-2 border border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 transition-colors rounded-sm">Comm_Link</a>
+          <a href="#contact" className="px-4 py-2 border border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 transition-colors rounded-sm">Contact</a>
         </div>
 
         <div className="flex items-center gap-4">

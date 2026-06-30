@@ -38,8 +38,8 @@ export default function Contact() {
 
       <div className="max-w-3xl mx-auto">
         <div className="flex flex-col items-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-3 font-gaming uppercase hover-glitch text-white">Comm_Link</h2>
-          <p className="text-cyan-400 font-mono text-sm uppercase tracking-widest">Establish Connection</p>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-3 font-gaming uppercase hover-glitch text-white">Contact Me</h2>
+          <p className="text-cyan-400 font-mono text-sm uppercase tracking-widest">Get In Touch</p>
         </div>
 
         <motion.form 
@@ -58,7 +58,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div className="space-y-2">
               <label htmlFor="name" className="text-sm font-mono text-cyan-400 uppercase tracking-widest flex items-center gap-2">
-                <Terminal className="w-3 h-3" /> Player Name
+                <Terminal className="w-3 h-3" /> Name
               </label>
               <input
                 type="text"
@@ -86,7 +86,7 @@ export default function Contact() {
 
           <div className="space-y-2 mb-8">
             <label htmlFor="message" className="text-sm font-mono text-cyan-400 uppercase tracking-widest flex items-center gap-2">
-              <Terminal className="w-3 h-3" /> Message Payload
+              <Terminal className="w-3 h-3" /> Message
             </label>
             <textarea
               id="message"
@@ -104,14 +104,14 @@ export default function Contact() {
             className="w-full py-4 bg-cyan-500 hover:bg-cyan-400 text-black font-gaming font-bold uppercase tracking-widest flex items-center justify-center gap-3 transition-all transform hover:scale-[1.02] shadow-[0_0_20px_rgba(6,182,212,0.4)] disabled:opacity-50 disabled:cursor-not-allowed clip-path-slant rounded-sm"
           >
             {status === 'loading' ? (
-              <span className="animate-pulse">Transmitting...</span>
+              <span className="animate-pulse">Sending...</span>
             ) : status === 'success' ? (
-              <span>Transmission Successful!</span>
+              <span>Message Sent!</span>
             ) : status === 'error' ? (
-              <span className="text-red-900">Transmission Failed</span>
+              <span className="text-red-900">Send Failed</span>
             ) : (
               <>
-                <Send className="w-5 h-5" /> Execute
+                <Send className="w-5 h-5" /> Send Message
               </>
             )}
           </button>

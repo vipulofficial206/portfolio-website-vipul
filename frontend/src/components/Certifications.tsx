@@ -9,7 +9,7 @@ export default function Certifications() {
 
       <div className="flex flex-col items-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-3 font-gaming uppercase hover-glitch text-white">Achievements</h2>
-        <p className="text-cyan-400 font-mono text-sm uppercase tracking-widest">Badges & Lore</p>
+        <p className="text-cyan-400 font-mono text-sm uppercase tracking-widest">Education & Certifications</p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">

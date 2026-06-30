@@ -13,11 +13,11 @@ export default function Hero() {
       >
         <div className="flex items-center gap-2 mb-4">
           <div className="w-2 h-2 bg-fuchsia-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(217,70,239,0.8)]" />
-          <span className="text-[10px] font-mono text-fuchsia-400 uppercase tracking-[0.2em] animate-pulse">System Online // Ready Player One</span>
+          <span className="text-[10px] font-mono text-fuchsia-400 uppercase tracking-[0.2em] animate-pulse">System Online // Portfolio Active</span>
         </div>
         
         <h2 className="font-mono text-cyan-400 text-sm mb-4 tracking-widest uppercase border-l-2 border-cyan-500 pl-3">
-          Level 99 UI Engineer & ML Specialist
+          Web Developer & ML Specialist
         </h2>
         
         <h1 className="text-5xl sm:text-7xl md:text-8xl font-gaming font-bold tracking-tighter mb-6 leading-[1.1] uppercase">
@@ -33,10 +33,10 @@ export default function Hero() {
         
         <div className="flex flex-wrap gap-4 mb-12">
           <a href="#contact" className="px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-black font-gaming uppercase font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(6,182,212,0.4)] clip-path-slant">
-            Start Quest
+            Contact Me
           </a>
           <a href="#projects" className="px-8 py-4 glass-panel hover:bg-white/5 text-white font-gaming uppercase font-bold transition-all transform hover:-translate-y-1 border border-cyan-500/50">
-            View Inventory
+            View Projects
           </a>
           <a 
             href="https://drive.google.com/file/d/1KdTrIzS759HHC6n7TE1ZYUz0kjvg0TU0/view?usp=drive_link" 
@@ -44,7 +44,7 @@ export default function Hero() {
             rel="noreferrer"
             className="px-8 py-4 glass-panel hover:bg-white/5 text-cyan-400 font-mono font-bold transition-all flex items-center gap-2 transform hover:-translate-y-1 border-b-2 border-fuchsia-500"
           >
-            <Terminal className="w-5 h-5" /> EXtract.exe
+            <Terminal className="w-5 h-5" /> Resume.pdf
           </a>
         </div>
 

@@ -51,14 +51,16 @@ export default function Projects() {
               </div>
               
               <div className="flex gap-4">
-                <a 
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-center gap-2 text-sm font-mono uppercase text-white/50 hover:text-fuchsia-400 transition-colors"
-                >
-                  <Github className="w-4 h-4" /> Source
-                </a>
+                {!project.tags.includes("Client Project") && (
+                  <a 
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-2 text-sm font-mono uppercase text-white/50 hover:text-fuchsia-400 transition-colors"
+                  >
+                    <Github className="w-4 h-4" /> Source
+                  </a>
+                )}
                 <a 
                   href={project.link}
                   target="_blank"

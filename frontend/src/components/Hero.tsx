@@ -17,7 +17,7 @@ export default function Hero() {
         </div>
         
         <h2 className="font-mono text-cyan-400 text-sm mb-4 tracking-widest uppercase border-l-2 border-cyan-500 pl-3">
-          Web Developer & ML Specialist
+          Web Developer & DL Specialist
         </h2>
         
         <h1 className="text-5xl sm:text-7xl md:text-8xl font-gaming font-bold tracking-tighter mb-6 leading-[1.1] uppercase">

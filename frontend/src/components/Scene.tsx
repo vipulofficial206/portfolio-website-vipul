@@ -6,11 +6,10 @@ import * as THREE from 'three';
 function RetroGrid() {
   const gridRef = useRef<THREE.GridHelper>(null!);
 
-  useFrame((state) => {
+  useFrame((state, delta) => {
     // Scroll the grid towards the camera to simulate moving forward
-    const time = state.clock.getElapsedTime();
     if (gridRef.current) {
-      gridRef.current.position.z = (time * 2) % 2; // Loop every unit
+      gridRef.current.position.z = (gridRef.current.position.z + delta * 2) % 2;
     }
   });
 

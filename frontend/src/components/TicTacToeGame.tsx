@@ -65,7 +65,7 @@ export default function TicTacToeGame() {
         <div className="text-yellow-400 flex items-center gap-2">
           <Grid3x3 className="w-5 h-5" />
           <span className="opacity-60">TURN:</span>
-          <span className="text-2xl font-bold neon-text">{isXNext ? 'X' : 'O'}</span>
+          <span className="text-xl font-bold neon-text">{isXNext ? 'YOUR TURN' : 'BOT THINKING...'}</span>
         </div>
       </div>
 
@@ -99,7 +99,7 @@ export default function TicTacToeGame() {
         {(winner || isDraw) && (
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/80 backdrop-blur-sm z-20 text-center p-6">
             <h3 className={`font-gaming text-3xl mb-2 uppercase animate-pulse ${winner === 'X' ? 'text-cyan-400' : winner === 'O' ? 'text-fuchsia-400' : 'text-yellow-500'}`}>
-              {winner ? `Player ${winner} Wins!` : 'Draw!'}
+              {winner === 'X' ? 'You Won!' : winner === 'O' ? 'Bot Wins!' : 'Draw!'}
             </h3>
             <button 
               onClick={resetGame}

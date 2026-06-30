@@ -22,27 +22,27 @@ export default function Arcade() {
       <div className="flex flex-wrap justify-center gap-4 mb-8 max-w-4xl mx-auto px-4">
         <button 
           onClick={() => setActiveGame('snake')}
-          className={`flex items-center gap-2 px-6 py-3 font-gaming uppercase font-bold transition-all border ${activeGame === 'snake' ? 'bg-cyan-500/20 border-cyan-400 text-cyan-400 shadow-[0_0_15px_rgba(6,182,212,0.4)]' : 'border-cyan-900/50 text-white/50 hover:border-cyan-500/50 hover:text-white'} rounded`}
+          className={`flex items-center gap-2 px-4 py-2 text-xs sm:text-sm md:px-6 md:py-3 font-gaming uppercase font-bold transition-all border ${activeGame === 'snake' ? 'bg-cyan-500/20 border-cyan-400 text-cyan-400 shadow-[0_0_15px_rgba(6,182,212,0.4)]' : 'border-cyan-900/50 text-white/50 hover:border-cyan-500/50 hover:text-white'} rounded`}
         >
-          <Gamepad2 className="w-5 h-5" /> Cyber Snake
+          <Gamepad2 className="w-4 h-4 md:w-5 md:h-5" /> Cyber Snake
         </button>
         <button 
           onClick={() => setActiveGame('memory')}
-          className={`flex items-center gap-2 px-6 py-3 font-gaming uppercase font-bold transition-all border ${activeGame === 'memory' ? 'bg-fuchsia-500/20 border-fuchsia-400 text-fuchsia-400 shadow-[0_0_15px_rgba(217,70,239,0.4)]' : 'border-fuchsia-900/50 text-white/50 hover:border-fuchsia-500/50 hover:text-white'} rounded`}
+          className={`flex items-center gap-2 px-4 py-2 text-xs sm:text-sm md:px-6 md:py-3 font-gaming uppercase font-bold transition-all border ${activeGame === 'memory' ? 'bg-fuchsia-500/20 border-fuchsia-400 text-fuchsia-400 shadow-[0_0_15px_rgba(217,70,239,0.4)]' : 'border-fuchsia-900/50 text-white/50 hover:border-fuchsia-500/50 hover:text-white'} rounded`}
         >
-          <BrainCircuit className="w-5 h-5" /> Memory Match
+          <BrainCircuit className="w-4 h-4 md:w-5 md:h-5" /> Memory Match
         </button>
         <button 
           onClick={() => setActiveGame('tictactoe')}
-          className={`flex items-center gap-2 px-6 py-3 font-gaming uppercase font-bold transition-all border ${activeGame === 'tictactoe' ? 'bg-yellow-500/20 border-yellow-400 text-yellow-400 shadow-[0_0_15px_rgba(234,179,8,0.4)]' : 'border-yellow-900/50 text-white/50 hover:border-yellow-500/50 hover:text-white'} rounded`}
+          className={`flex items-center gap-2 px-4 py-2 text-xs sm:text-sm md:px-6 md:py-3 font-gaming uppercase font-bold transition-all border ${activeGame === 'tictactoe' ? 'bg-yellow-500/20 border-yellow-400 text-yellow-400 shadow-[0_0_15px_rgba(234,179,8,0.4)]' : 'border-yellow-900/50 text-white/50 hover:border-yellow-500/50 hover:text-white'} rounded`}
         >
-          <Grid3x3 className="w-5 h-5" /> Tic-Tac-Toe
+          <Grid3x3 className="w-4 h-4 md:w-5 md:h-5" /> Tic-Tac-Toe
         </button>
         <button 
           onClick={() => setActiveGame('reaction')}
-          className={`flex items-center gap-2 px-6 py-3 font-gaming uppercase font-bold transition-all border ${activeGame === 'reaction' ? 'bg-orange-500/20 border-orange-400 text-orange-400 shadow-[0_0_15px_rgba(249,115,22,0.4)]' : 'border-orange-900/50 text-white/50 hover:border-orange-500/50 hover:text-white'} rounded`}
+          className={`flex items-center gap-2 px-4 py-2 text-xs sm:text-sm md:px-6 md:py-3 font-gaming uppercase font-bold transition-all border ${activeGame === 'reaction' ? 'bg-orange-500/20 border-orange-400 text-orange-400 shadow-[0_0_15px_rgba(249,115,22,0.4)]' : 'border-orange-900/50 text-white/50 hover:border-orange-500/50 hover:text-white'} rounded`}
         >
-          <Zap className="w-5 h-5" /> Reflex Test
+          <Zap className="w-4 h-4 md:w-5 md:h-5" /> Reflex Test
         </button>
       </div>
 

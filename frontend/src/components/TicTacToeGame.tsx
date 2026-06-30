@@ -71,7 +71,7 @@ export default function TicTacToeGame() {
 
       <div className="relative aspect-square w-full max-w-[400px] mx-auto bg-black/60 border-2 border-yellow-500/30 rounded-xl overflow-hidden shadow-[inset_0_0_20px_rgba(0,0,0,1)] p-4">
         {isPlaying || winner || isDraw ? (
-          <div className="grid grid-cols-3 gap-2 h-full">
+          <div className="grid grid-cols-3 grid-rows-3 gap-2 h-full">
             {board.map((square, index) => (
               <div 
                 key={index}

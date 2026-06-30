@@ -2,6 +2,24 @@ import { Layout, Cpu, Database, Code2, Github } from 'lucide-react';
 
 export const PROJECTS = [
   {
+    title: "Sree Devi Collection",
+    subtitle: "Real-World Client Project",
+    description: "An e-commerce collection platform tailored to local client requirements. Delivered as a freelance project and successfully deployed on Vercel for the client's localized use.",
+    tags: ["Freelance", "Client Project", "Vercel"],
+    link: "https://sree-devi-collection.vercel.app/",
+    icon: <Layout className="w-6 h-6" />,
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    title: "The Blueprint Squad",
+    subtitle: "Real-World Client Project",
+    description: "A professional web application built according to specific local client requirements. Ordered by the client and deployed on Vercel to establish their online digital presence.",
+    tags: ["Freelance", "Client Project", "Vercel"],
+    link: "https://the-blueprint-squad.vercel.app/",
+    icon: <Layout className="w-6 h-6" />,
+    image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800"
+  },
+  {
     title: "Plant Analysis",
     subtitle: "AI-Based Soil Intelligence",
     description: "Krishi Saathi AI is a comprehensive, AI-Based Soil Intelligence System designed to help farmers make data-driven decisions. By analyzing real-world soil test reports, local agro-climatic conditions...",

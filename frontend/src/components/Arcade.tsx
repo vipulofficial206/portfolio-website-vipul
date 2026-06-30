@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import { Gamepad2, BrainCircuit } from 'lucide-react';
+import { Gamepad2, BrainCircuit, Grid3x3, Zap } from 'lucide-react';
 import SnakeGame from './SnakeGame';
 import MemoryGame from './MemoryGame';
+import TicTacToeGame from './TicTacToeGame';
+import ReactionGame from './ReactionGame';
 
 export default function Arcade() {
-  const [activeGame, setActiveGame] = useState<'snake' | 'memory'>('snake');
+  const [activeGame, setActiveGame] = useState<'snake' | 'memory' | 'tictactoe' | 'reaction'>('snake');
 
   return (
     <section id="arcade" className="py-24 md:py-32 border-t border-cyan-900/30 relative">
@@ -17,7 +19,7 @@ export default function Arcade() {
         </p>
       </div>
 
-      <div className="flex justify-center gap-4 mb-8">
+      <div className="flex flex-wrap justify-center gap-4 mb-8 max-w-4xl mx-auto px-4">
         <button 
           onClick={() => setActiveGame('snake')}
           className={`flex items-center gap-2 px-6 py-3 font-gaming uppercase font-bold transition-all border ${activeGame === 'snake' ? 'bg-cyan-500/20 border-cyan-400 text-cyan-400 shadow-[0_0_15px_rgba(6,182,212,0.4)]' : 'border-cyan-900/50 text-white/50 hover:border-cyan-500/50 hover:text-white'} rounded`}
@@ -30,10 +32,25 @@ export default function Arcade() {
         >
           <BrainCircuit className="w-5 h-5" /> Memory Match
         </button>
+        <button 
+          onClick={() => setActiveGame('tictactoe')}
+          className={`flex items-center gap-2 px-6 py-3 font-gaming uppercase font-bold transition-all border ${activeGame === 'tictactoe' ? 'bg-yellow-500/20 border-yellow-400 text-yellow-400 shadow-[0_0_15px_rgba(234,179,8,0.4)]' : 'border-yellow-900/50 text-white/50 hover:border-yellow-500/50 hover:text-white'} rounded`}
+        >
+          <Grid3x3 className="w-5 h-5" /> Tic-Tac-Toe
+        </button>
+        <button 
+          onClick={() => setActiveGame('reaction')}
+          className={`flex items-center gap-2 px-6 py-3 font-gaming uppercase font-bold transition-all border ${activeGame === 'reaction' ? 'bg-orange-500/20 border-orange-400 text-orange-400 shadow-[0_0_15px_rgba(249,115,22,0.4)]' : 'border-orange-900/50 text-white/50 hover:border-orange-500/50 hover:text-white'} rounded`}
+        >
+          <Zap className="w-5 h-5" /> Reflex Test
+        </button>
       </div>
 
       <div>
-        {activeGame === 'snake' ? <SnakeGame /> : <MemoryGame />}
+        {activeGame === 'snake' && <SnakeGame />}
+        {activeGame === 'memory' && <MemoryGame />}
+        {activeGame === 'tictactoe' && <TicTacToeGame />}
+        {activeGame === 'reaction' && <ReactionGame />}
       </div>
     </section>
   );

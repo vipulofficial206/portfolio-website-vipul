@@ -164,8 +164,8 @@ export const EDUCATION = [
 ];
 
 export const GITHUB_STATS = [
-  { label: "Repositories", value: "11+", icon: <Database className="w-4 h-4" /> },
-  { label: "Hackathons", value: "20+", icon: <Code2 className="w-4 h-4" /> },
+  { label: "Repositories", value: "20+", icon: <Database className="w-4 h-4" /> },
+  { label: "Hackathons", value: "25+", icon: <Code2 className="w-4 h-4" /> },
   { label: "Practical Experience", value: "1+ Years", icon: <Cpu className="w-4 h-4" /> },
 ];
 

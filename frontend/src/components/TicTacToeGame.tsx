@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { RefreshCw, Grid3x3 } from 'lucide-react';
 
 export default function TicTacToeGame() {
@@ -24,13 +24,31 @@ export default function TicTacToeGame() {
   const winner = calculateWinner(board);
   const isDraw = !winner && board.every(square => square !== null);
 
+  useEffect(() => {
+    if (!isPlaying || winner || isDraw || isXNext) return;
+
+    // Bot's turn (O)
+    const timer = setTimeout(() => {
+      const emptyIndices = board.map((sq, i) => sq === null ? i : null).filter(i => i !== null) as number[];
+      if (emptyIndices.length > 0) {
+        const randomIndex = emptyIndices[Math.floor(Math.random() * emptyIndices.length)];
+        const newBoard = [...board];
+        newBoard[randomIndex] = 'O';
+        setBoard(newBoard);
+        setIsXNext(true);
+      }
+    }, 600);
+
+    return () => clearTimeout(timer);
+  }, [isXNext, board, isPlaying, winner, isDraw]);
+
   const handleClick = (index: number) => {
-    if (!isPlaying || board[index] || winner) return;
+    if (!isPlaying || board[index] || winner || !isXNext) return;
 
     const newBoard = [...board];
-    newBoard[index] = isXNext ? 'X' : 'O';
+    newBoard[index] = 'X';
     setBoard(newBoard);
-    setIsXNext(!isXNext);
+    setIsXNext(false);
   };
 
   const resetGame = () => {

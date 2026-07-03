@@ -51,9 +51,9 @@ export default function Projects() {
               </div>
               
               <div className="flex gap-4">
-                {!project.tags.includes("Client Project") && (
+                {project.github && (
                   <a 
-                    href={project.link}
+                    href={project.github}
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-2 text-sm font-mono uppercase text-white/50 hover:text-fuchsia-400 transition-colors"
@@ -61,14 +61,16 @@ export default function Projects() {
                     <Github className="w-4 h-4" /> Source
                   </a>
                 )}
-                <a 
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-center gap-2 text-sm font-mono uppercase text-white/50 hover:text-cyan-400 transition-colors"
-                >
-                  <ExternalLink className="w-4 h-4" /> Deploy
-                </a>
+                {project.live && (
+                  <a 
+                    href={project.live}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-2 text-sm font-mono uppercase text-white/50 hover:text-cyan-400 transition-colors"
+                  >
+                    <ExternalLink className="w-4 h-4" /> Deploy
+                  </a>
+                )}
               </div>
             </div>
           </motion.div>

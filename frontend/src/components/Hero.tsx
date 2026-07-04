@@ -31,21 +31,46 @@ export default function Hero() {
           <span className="text-cyan-500">{'>'}</span> Status: Ready to build scalable and interactive web applications.
         </p>
         
-        <div className="flex flex-wrap gap-3 sm:gap-4 mb-12">
+        <div className="flex flex-wrap gap-3 sm:gap-4 mb-6">
           <a href="#contact" className="px-4 py-3 sm:px-8 sm:py-4 text-xs sm:text-base bg-cyan-500 hover:bg-cyan-400 text-black font-gaming uppercase font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(6,182,212,0.4)] clip-path-slant">
             Contact Me
           </a>
           <a href="#projects" className="px-4 py-3 sm:px-8 sm:py-4 text-xs sm:text-base glass-panel hover:bg-white/5 text-white font-gaming uppercase font-bold transition-all transform hover:-translate-y-1 border border-cyan-500/50">
             View Projects
           </a>
-          <a 
-            href="https://drive.google.com/file/d/1KdTrIzS759HHC6n7TE1ZYUz0kjvg0TU0/view?usp=drive_link" 
-            target="_blank"
-            rel="noreferrer"
-            className="px-4 py-3 sm:px-8 sm:py-4 text-xs sm:text-base glass-panel hover:bg-white/5 text-cyan-400 font-mono font-bold transition-all flex items-center gap-2 transform hover:-translate-y-1 border-b-2 border-fuchsia-500"
-          >
-            <Terminal className="w-4 h-4 sm:w-5 sm:h-5" /> Resume.pdf
-          </a>
+        </div>
+
+        <div className="mb-12">
+          <div className="flex items-center gap-2 mb-3">
+            <Terminal className="w-4 h-4 text-fuchsia-400" />
+            <span className="text-xs font-mono text-white/50 uppercase tracking-widest">Select Resume Profile:</span>
+          </div>
+          <div className="flex flex-wrap gap-2 sm:gap-3">
+            <a 
+              href="https://drive.google.com/file/d/1_Dwsn-D-eNsYwM_p3Cd3WujndwggLlZU/view?usp=sharing" 
+              target="_blank"
+              rel="noreferrer"
+              className="px-3 py-2 text-xs glass-panel hover:bg-white/5 text-cyan-400 font-mono transition-all border-l-2 border-cyan-500 hover:border-fuchsia-500"
+            >
+              Full Stack
+            </a>
+            <a 
+              href="https://drive.google.com/file/d/1FI0z277IrgKW2SaJZWX34w5vj52CR0_g/view?usp=sharing" 
+              target="_blank"
+              rel="noreferrer"
+              className="px-3 py-2 text-xs glass-panel hover:bg-white/5 text-cyan-400 font-mono transition-all border-l-2 border-cyan-500 hover:border-fuchsia-500"
+            >
+              AI / ML / DL
+            </a>
+            <a 
+              href="https://drive.google.com/file/d/1gDXBApjvxe-AinW5s8hTOjIrNCBjXR72/view?usp=sharing" 
+              target="_blank"
+              rel="noreferrer"
+              className="px-3 py-2 text-xs glass-panel hover:bg-white/5 text-cyan-400 font-mono transition-all border-l-2 border-cyan-500 hover:border-fuchsia-500"
+            >
+              Software Eng
+            </a>
+          </div>
         </div>
 
         <div className="flex gap-8 border-t border-cyan-900/50 pt-8">

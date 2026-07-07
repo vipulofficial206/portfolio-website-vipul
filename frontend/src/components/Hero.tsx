@@ -47,7 +47,7 @@ export default function Hero() {
           </div>
           <div className="flex flex-wrap gap-2 sm:gap-3">
             <a 
-              href="https://drive.google.com/file/d/1_Dwsn-D-eNsYwM_p3Cd3WujndwggLlZU/view?usp=sharing" 
+              href="https://drive.google.com/file/d/13M6FvPVDdQNJXIC2MoOUgSATF-cmrTwX/view?usp=sharing" 
               target="_blank"
               rel="noreferrer"
               className="px-3 py-2 text-xs glass-panel hover:bg-white/5 text-cyan-400 font-mono transition-all border-l-2 border-cyan-500 hover:border-fuchsia-500"
@@ -55,7 +55,7 @@ export default function Hero() {
               Full Stack
             </a>
             <a 
-              href="https://drive.google.com/file/d/1FI0z277IrgKW2SaJZWX34w5vj52CR0_g/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1FxZe4MPveSlMjYqXjcGq7pPmWW2V4z_w/view?usp=sharing" 
               target="_blank"
               rel="noreferrer"
               className="px-3 py-2 text-xs glass-panel hover:bg-white/5 text-cyan-400 font-mono transition-all border-l-2 border-cyan-500 hover:border-fuchsia-500"
@@ -63,7 +63,7 @@ export default function Hero() {
               AI / ML / DL
             </a>
             <a 
-              href="https://drive.google.com/file/d/1gDXBApjvxe-AinW5s8hTOjIrNCBjXR72/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1eRLgMiCkwtBcCN5sPTEdHLK0iqFx0EyX/view?usp=sharing" 
               target="_blank"
               rel="noreferrer"
               className="px-3 py-2 text-xs glass-panel hover:bg-white/5 text-cyan-400 font-mono transition-all border-l-2 border-cyan-500 hover:border-fuchsia-500"

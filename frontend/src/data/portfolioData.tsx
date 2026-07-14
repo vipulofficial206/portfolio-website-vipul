@@ -224,6 +224,6 @@ export const GITHUB_STATS = [
 
 export const SOCIAL_LINKS = [
   { id: 'github', label: 'GitHub', url: 'https://github.com/vipulofficial206' },
-  { id: 'linkedin', label: 'LinkedIn', url: 'https://www.linkedin.com/in/vipul-thamminana' },
+  { id: 'linkedin', label: 'LinkedIn', url: 'https://www.linkedin.com/in/thamminana-vipul-588024327' },
   { id: 'email', label: 'Email', url: 'mailto:vipulofficial206@gmail.com' }
 ];

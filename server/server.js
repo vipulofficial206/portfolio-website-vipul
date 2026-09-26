@@ -13,7 +13,19 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: "https://portfolio-website-vipul.vercel.app",
+    origin: function (origin, callback) {
+      if (!origin) return callback(null, true);
+      if (
+        origin === "https://portfolio-website-vipul.vercel.app" ||
+        origin.endsWith(".vercel.app") ||
+        origin === "http://localhost:5173" ||
+        origin === "http://localhost:3000"
+      ) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
     allowedHeaders: [
       "Content-Type",

@@ -25,11 +25,11 @@ export default function Projects() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent z-10 opacity-80" />
             
             <div className="relative h-48 w-full overflow-hidden border-b border-cyan-900/50">
-              <div className="absolute inset-0 bg-cyan-500/20 mix-blend-overlay group-hover:opacity-0 transition-opacity z-10"></div>
+              <div className="absolute inset-0 bg-cyan-500/20 mix-blend-overlay opacity-0 md:opacity-100 group-hover:opacity-0 transition-opacity z-10"></div>
               <img 
                 src={project.image} 
                 alt={project.title}
-                className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-110"
+                className="w-full h-full object-cover filter grayscale-0 md:grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-110"
                 referrerPolicy="no-referrer"
               />
             </div>

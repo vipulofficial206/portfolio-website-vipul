@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Terminal, Send, Trash2, ArrowLeft } from 'lucide-react';
+import { Terminal, Trash2, ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 interface Message {

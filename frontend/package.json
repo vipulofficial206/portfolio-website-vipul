@@ -19,6 +19,7 @@
     "motion": "^12.34.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-router-dom": "^7.18.4",
     "three": "^0.183.2"
   },
   "devDependencies": {

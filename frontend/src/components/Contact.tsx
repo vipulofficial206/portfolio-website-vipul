@@ -13,7 +13,7 @@ export default function Contact() {
       const formData = new FormData(e.currentTarget);
       const data = Object.fromEntries(formData);
       
-      const response = await fetch('https://vipul-portfolio-backend.onrender.com/api/contact', {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
